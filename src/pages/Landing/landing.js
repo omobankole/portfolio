@@ -1,16 +1,10 @@
 import classes from "./landing.module.css";
 import { Text } from "../../constant";
 import Dock from "../../components/Dock/dock";
-import { useEffect } from "react";
 import Star from "../../assets/star.png";
 import Construction from "../../assets/images/Landing/construction.gif";
-import Typed from "react-typed";
 
 const Landing = () => {
-  const handleScroll = (e) => {};
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  }, []);
   return (
     <>
       <main className={`relative ${classes.main}`}>
@@ -32,15 +26,7 @@ const Landing = () => {
             possible and achieving maximum client satisfaction.
           </p>
         </div>
-        {/* <Typed
-        strings={[
-          "<p class='first'>Responsible for the look and feel of a website or application to ensure a seamless experience for users.</p>",
-          "<p class='first'>Develops, designs and implements user-facing features for websites and applications using React.js</p>",
-          "<p class='first'>Work with a team of developers, programmers, web designers, and project managers to work closely on a client’s software project.</p>",
-        ]}
-        typeSpeed={40}
-        loop
-      /> */}
+
         <div className={classes.text2}>
           <Text />
         </div>
