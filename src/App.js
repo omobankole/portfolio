@@ -1,24 +1,21 @@
-import Landing from "./pages/Landing/landing";
-import Projects from "./pages/Projects/projects";
-import { Routes, Route } from "react-router-dom";
 import "./globals/utilities.css";
 import "./globals/typography.css";
-import { ThemeContext } from "./context/index";
-import { useState, useEffect } from "react";
+import "./globals/darkmode.css";
 
+import { useState, useEffect } from "react";
+import Router from "./router";
+import { ThemeContext } from "./context";
 
 const App = () => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+
   useEffect(() => {
-    if (theme === "light") document.body.classList.add("light");
-    else document.body.classList.remove("light");
+    localStorage.setItem("theme", theme);
+    document.body.className = theme;
   }, [theme]);
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+      <Router />
     </ThemeContext.Provider>
   );
 };

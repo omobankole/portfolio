@@ -1,24 +1,57 @@
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 10px 35px;
+  width: 25rem;
+  font-family: var(--outfit);
 }
-body[class*="light"] .card img{
-  border: 2px solid rgb(161, 155, 155);
-}
-.card img {
-  width: 298.03px;
-  height: 242px;
-  margin: 30px 0;
-  border-radius: 10px;
-  object-fit: contain;
-}
-.card p {
-  font-size: 20px;
-  width: 90%;
+.image {
+  width: 25rem;
+  height: 250px;
+  border: 1px solid #000;
 }
 
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.card p {
+  height: 5rem;
+  font-size: 20px;
+}
 .card span {
   font-size: 13px;
+}
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.link a {
+  padding: 8px 14px;
+  background: #36454f;
+  border: 1px solid #36454f;
+  transition: 0.3s ease;
+  border-radius: 6px;
+  font-family: var(--trap-medium);
+  font-size: 20px;
+  cursor: pointer;
+}
+.link a:hover {
+  background: transparent;
+}
+.darkMode .link a {
+  background: #000;
+  border: 1px solid #000;
+  color: #fff;
+}
+.darkMode .link a:hover {
+  background: transparent;
+  color: #000;
+}
+@media screen and (max-width: 425px) {
+  .card {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+  }
 }

@@ -1,19 +1,22 @@
+import { useContext } from "react";
 import classes from "./card.module.css";
+import { ThemeContext } from "../../context";
 
 const Card = ({ heading, img, skills, link }) => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <a
-      className={classes.card}
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <div className={`${classes.card} ${theme === "light" && classes.darkMode}`}>
       <p>{heading}</p>
-      <img src={img} alt="" />
-      <div>
-        <span>{skills}</span>
+      <div className={classes.image}>
+        <img src={img} alt="" />
       </div>
-    </a>
+      <div className={classes.link}>
+        <span>{skills}</span>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          Visit &#8674;
+        </a>
+      </div>
+    </div>
   );
 };
 

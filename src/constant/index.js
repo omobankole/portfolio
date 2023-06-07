@@ -120,7 +120,7 @@ export const data = [
     heading: "Passpoint - Beautiful Journeys Start Here",
     img: Passpoint,
     skills: "ReactJs",
-    link1: "https://mypasspoint.com/",
+    link1: "https://stagingweb.mypasspoint.com/",
     link2: "https://mypasspoint.com/",
   },
   {
