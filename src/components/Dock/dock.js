@@ -25,6 +25,8 @@ const Dock = ({ open, setOpen }) => {
     }
     setOpen(false);
   };
+
+  
   return (
     <div
       className={`${classes.container} ${

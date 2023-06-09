@@ -9,7 +9,7 @@ const MainLayout = () => {
   const { theme } = useContext(ThemeContext);
   const [open, setOpen] = useState(false);
   return (
-    <div className={`${theme} ${classes.main}`}>
+    <div className={`${theme === "light" && classes.darkMode} ${classes.main}`}>
       <div className={classes.children}>
         <Outlet />
       </div>

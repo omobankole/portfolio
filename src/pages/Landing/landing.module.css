@@ -9,28 +9,7 @@
   width: 80%;
   margin: 0 auto;
 }
-.text1 {
-  position: absolute;
-  top: 5rem;
-  left: 11rem;
-}
-.text2 {
-  position: absolute;
-  bottom: 7rem;
-  right: 12rem;
-}
-.star1 {
-  position: absolute;
-  bottom: 1rem;
-  left: 2rem;
-  animation: rotation 3s infinite linear;
-}
-.star2 {
-  position: absolute;
-  top: 4rem;
-  right: 4rem;
-  animation: rotation 3s infinite linear;
-}
+
 .main h1 {
   font-family: var(--trap-extrabold);
   line-height: 5.5vw;
@@ -76,6 +55,10 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .main{
+  padding: 6rem 0;
+
+  }
   .main h1 {
     font-size: 8.5vw;
     line-height: 12vw;
