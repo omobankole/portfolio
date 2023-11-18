@@ -3,8 +3,16 @@ import Grazac from "../assets/images/Projects/grazac.jpg";
 import Grazac2 from "../assets/images/Projects/grazac-web.jpg";
 import Vast from "../assets/images/Projects/vast.png";
 import Atc from "../assets/images/Projects/atc.png";
+import Spen from "../assets/images/Projects/spen.png";
 
 export const data = [
+  {
+    heading: "Spen - Managing business payments has never been easier",
+    img: Spen,
+    skills: "NextJs, Angular, Tailwind",
+    link1: "https://www.myspen.com/",
+    link2: "https://www.myspen.com/",
+  },
   {
     heading: "Passpoint - Beautiful Journeys Start Here",
     img: Passpoint,

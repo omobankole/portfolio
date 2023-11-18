@@ -12,7 +12,7 @@ import classes from "./dock.module.css";
 import { useContext } from "react";
 import { ThemeContext } from "../../context";
 import Avatar from "../../assets/images/Dock/banky.png";
-import Cv from "../../assets/Yusuf_Bankole_Resume.pdf";
+import Cv from "../../assets/Yusuf_Bankole_Resume_.pdf";
 import GithubLight from "../../assets/images/Dock/github-light.png";
 
 const Dock = ({ open, setOpen }) => {
