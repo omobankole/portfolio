@@ -6,7 +6,7 @@ const Landing = () => {
       <main className={` ${classes.main}`}>
         <div className={`${classes.container}`}>
           <h1 className="center t-bg mb-md">
-            I'm Yusuf Bankole, a software developer from Lagos Nigeria.
+            I'm Yusuf Bankole, a frontend developer from Lagos Nigeria.
           </h1>
           <p className="center t-md">
             Passionate about high quality solutions for clients, coding to solve

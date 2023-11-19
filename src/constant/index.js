@@ -4,6 +4,7 @@ import Grazac2 from "../assets/images/Projects/grazac-web.jpg";
 import Vast from "../assets/images/Projects/vast.png";
 import Atc from "../assets/images/Projects/atc.png";
 import Spen from "../assets/images/Projects/spen.png";
+import Phast from "../assets/images/Projects/phast.png";
 
 export const data = [
   {
@@ -35,11 +36,18 @@ export const data = [
     link2: "https://grazacacademy.com/",
   },
   {
-    heading: "ATC Steam - ATC STEAM FOR CODING  ",
+    heading: "ATC Steam - ATC STEAM FOR CODING",
     img: Atc,
     skills: "NextJs",
     link1: "https://steam.atc.com.ng/",
     link2: "https://steam.atc.com.ng/",
+  },
+  {
+    heading: "Phast - Giving you seamless and endless payment possibilities",
+    img: Phast,
+    skills: "React",
+    link1: "https://phastpay.com/",
+    link2: "https://phastpay.com/",
   },
   {
     heading: "Vast - Worked on Admin Dashboard",
